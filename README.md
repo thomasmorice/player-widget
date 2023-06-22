@@ -15,6 +15,8 @@ Almost all the code resides in the `index.tsx` page. Since the layout is straigh
 
 The `Button` component has been created, just to make it a bit more reusable, and for the sake of creating a component :D
 
+I didn't make the player very dynamic, there is just a Tunnelbana jingle sound on loop when you press play, but using the [HTML Audio/Video properties](https://www.w3schools.com/tags/ref_av_dom.asp), we could use the `currentTime` and other things to make the scrubber and timer dynamic, not so complicated.
+
 To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
 - [Documentation](https://create.t3.gg/)

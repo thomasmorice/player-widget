@@ -3,6 +3,7 @@ import Image from "next/image";
 type ButtonProps = {
   icon:
     | "play"
+    | "pause"
     | "next-track"
     | "previous-track"
     | "backward-15sec"
@@ -10,10 +11,10 @@ type ButtonProps = {
   onClick?: () => void;
 };
 
-export default function Button({ icon }: ButtonProps) {
+export default function Button({ icon, onClick }: ButtonProps) {
   return (
     <div
-      onClick={() => console.log("clicked")}
+      onClick={onClick}
       className="player-button cursor-pointer rounded-full p-2"
     >
       <Image
