@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Ion;
+  src: url("/fonts/Ion.woff2") format("opentype");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/Inter.ttf") format("opentype");
+}
+
+.podcast-player {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px 4px 8px 0px rgba(0, 0, 0, 0.16),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.06) inset,
+    0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+.cover-mask {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.05) 3%,
+    rgba(0, 0, 0, 0.1) 5%,
+    rgba(0, 0, 0, 0.15) 8%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.7) 75%,
+    rgba(0, 0, 0, 1) 96%
+  );
+}
+
+.scrubber {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 0px 0px 1px rgba(253, 255, 255, 0.04) inset,
+    0px 1px 0.5px 0px rgba(253, 255, 255, 0.06) inset;
+}
+
+.scrubber .scrubber-inner {
+  background: linear-gradient(
+      180deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.98) 3.63%,
+      rgba(255, 255, 255, 0.96) 6.89%,
+      rgba(255, 255, 255, 0.93) 9.9%,
+      rgba(255, 255, 255, 0.9) 12.81%,
+      rgba(255, 255, 255, 0.86) 15.75%,
+      rgba(255, 255, 255, 0.82) 18.87%,
+      rgba(255, 255, 255, 0.77) 22.29%,
+      rgba(255, 255, 255, 0.71) 26.17%,
+      rgba(255, 255, 255, 0.65) 30.62%,
+      rgba(255, 255, 255, 0.57) 35.8%,
+      rgba(255, 255, 255, 0.48) 41.84%,
+      rgba(255, 255, 255, 0.38) 48.87%,
+      rgba(255, 255, 255, 0.27) 57.04%,
+      rgba(255, 255, 255, 0.14) 66.48%,
+      rgba(255, 255, 255, 0) 77.33%
+    ),
+    rgba(232, 248, 255, 0.7);
+}
+
+.player-button {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 3.63%,
+      rgba(255, 255, 255, 0.04) 6.89%,
+      rgba(255, 255, 255, 0.04) 9.9%,
+      rgba(255, 255, 255, 0.04) 12.81%,
+      rgba(255, 255, 255, 0.03) 15.75%,
+      rgba(255, 255, 255, 0.03) 18.87%,
+      rgba(255, 255, 255, 0.03) 22.29%,
+      rgba(255, 255, 255, 0.03) 26.17%,
+      rgba(255, 255, 255, 0.03) 30.62%,
+      rgba(255, 255, 255, 0.02) 35.8%,
+      rgba(255, 255, 255, 0.02) 41.84%,
+      rgba(255, 255, 255, 0.02) 48.87%,
+      rgba(255, 255, 255, 0.01) 57.04%,
+      rgba(255, 255, 255, 0.01) 66.48%,
+      rgba(255, 255, 255, 0) 77.33%
+    ),
+    #0c0f12;
+  background-blend-mode: LIGHTEN, NORMAL, NORMAL;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.24),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.24), 0px 4px 8px 0px rgba(0, 0, 0, 0.24),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.24),
+    0px -1px 1px 0px rgba(0, 0, 0, 0.16) inset,
+    0px 1px 1px 0px rgba(255, 255, 255, 0.06) inset;
+}
